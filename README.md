@@ -1,36 +1,33 @@
-# Simulation de Scraping d'API (Type Facebook) avec Mécanisme de Protection
-## Présentation
-Ce projet simule un scraping de données personnelles via une interface web, similaire aux attaques subies par des plateformes comme Facebook. L’objectif est de démontrer la facilité avec laquelle une API non protégée peut être exploitée, tout en illustrant l'impact de contre-mesures simples comme la limitation de requêtes (rate limiting).
+# 🕵️‍♂️ API Scraping Simulation (Facebook‑Style) with Protection Mechanism
+This project simulates personal‑data scraping through a web interface, similar to the attacks experienced by platforms like Facebook.
+Its goal is to demonstrate how easily an unprotected API can be exploited, while also showing the impact of simple countermeasures such as rate limiting.
 
-## Objectifs pédagogiques
-Simuler une attaque de scraping massif sur une API publique.
+---
 
-Illustrer l'effet de mécanismes de protection (limitation de requêtes par seconde).
+## 🎯 Educational Objectives
+- Simulate a mass‑scraping attack on a public API.
+- Demonstrate the effect of protection mechanisms (e.g., rate limiting per second).
+- Understand the risks of improper API configuration.
+- Raise awareness of API security and the importance of proper safeguards.
 
-Comprendre les risques liés à une mauvaise configuration des APIs.
+## 🛠️ Technologies Used
 
-Sensibiliser à l’importance de la vigilance et de la sécurité API.
+- HTML5 / CSS3
+- Vanilla JavaScript
+- Tailwind CSS (CDN version)
 
-## Technologies utilisées
-HTML5 / CSS3
+## ⚙️ Features
+### 🔎 Scraping Simulation
 
-JavaScript Vanilla
+- Automatic generation of random user profiles
+  → name, email, phone number, etc.
+- Dynamic insertion of scraped data into an HTML table.
+- Event logging with timestamps (scraping actions, attempts, blocks…).
+  
+### 🛡️ Protection Mechanism (Rate Limiting)
 
-Tailwind CSS (CDN)
-
-## Fonctionnalités
-Scraping simulé
-Génération automatique de profils utilisateurs aléatoires (nom, email, téléphone...).
-
-Insertion dynamique des données dans un tableau HTML.
-
-Journalisation des actions (log des événements avec timestamp).
-
-## Protection (Rate Limiting)
-Possibilité d’activer/désactiver la protection contre le scraping.
-
-Lorsqu’activée : bloque plus de 5 requêtes par seconde.
-
-Comptage des requêtes effectuées et bloquées.
-
-Réinitialisation automatique des compteurs à chaque (dé)activation.
+- Option to enable or disable scraping protection.
+- When enabled:
+- Blocks more than 5 requests per second.
+- Logs blocked requests.
+- Automatic reset of internal counters whenever the protection is toggled.
